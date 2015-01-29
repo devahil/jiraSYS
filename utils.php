@@ -19,7 +19,6 @@ function get_from($resource, $data) {
 }
 
 
-
 function post_to($resource, $data) {
 	$jdata = json_encode($data);
 	$ch = curl_init();
@@ -55,5 +54,6 @@ function put_to($resource, $data) {
 	curl_close($ch);
 	return json_decode($result);
 }
+
 
 ?>

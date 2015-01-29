@@ -1,4 +1,5 @@
 <?php
+
  require_once("utils.php");
 
 $key = 'TIS-71';
@@ -19,4 +20,5 @@ if ($result != NULL) {
 } else {
 	echo "Edits complete. Issue can be viewed at " . JIRA_URL ."/browse/{$key}\n";
 }
+
 ?>
